@@ -1,0 +1,80 @@
+/**index.wxss**/
+/**index header**/
+.index_header{
+  width: 100%;
+  height: 280rpx;
+}
+.index_logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.t-logo{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  /**border-radius: 50%;**/
+}
+.index_goole{
+  margin-top: 80rpx;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 16pt;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+
+
+.weui-search-bar {
+  padding: 8px 30px;
+  height:38px;
+}
+.weui-icon-search {
+  margin-right: 8px;
+  font-size: inherit;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__text {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+
+.weui-icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 8px;
+  font-size: 0;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9B9B9B;
+  background: #FFFFFF;
+  height:38px;
+  line-height: 38px;
+}

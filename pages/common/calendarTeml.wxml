@@ -1,0 +1,57 @@
+<block wx:if="{{type == 'swiper'}}">
+    <swiper duration="200" style="height: 750rpx;">
+        <block wx:for="{{data}}">
+            <swiper-item>
+                <view class="ui-calendar" style="height: 750rpx;">
+                    <view class="ui-calendar__title">{{item.YAndM}}</view>
+                    <view class="ui-calendar__item de-color">日</view>
+                    <view class="ui-calendar__item">一</view>
+                    <view class="ui-calendar__item">二</view>
+                    <view class="ui-calendar__item">三</view>
+                    <view class="ui-calendar__item">四</view>
+                    <view class="ui-calendar__item">五</view>
+                    <view class="ui-calendar__item de-color">六</view>
+                    <block wx:for="{{item.calendarList}}" wx:for-item="calendar">
+                        <view class="ui-calendar__item ui-calendar__{{calendar.status}} ui-calendar__{{calendar.rentStatus}}" data-date="{{calendar.date}}" data-dateInfo="{{calendar.cantap}}">
+                            <view>{{calendar.currDate}}</view>
+                            <view class="ui-calendar__price">{{calendar.price}}</view>
+                        </view>
+                    </block>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</block>
+
+<block wx:else>
+    <block wx:for="{{data}}" wx:for-index="index">
+        <view class="ui-calendar">
+            <view class="ui-calendar__header" wx:if="{{index == 0}}">
+                <view class="ui-weeks de-color">日</view>
+                <view class="ui-weeks">一</view>
+                <view class="ui-weeks">二</view>
+                <view class="ui-weeks">三</view>
+                <view class="ui-weeks">四</view>
+                <view class="ui-weeks">五</view>
+                <view class="ui-weeks de-color">六</view>
+            </view>
+            <view class="ui-calendar__title mt40" wx:if="{{index == 0}}">{{item.YAndM}}</view>
+            <view class="ui-calendar__title" wx:else>{{item.YAndM}}</view>
+            <block wx:for="{{item.calendarList}}" wx:for-item="calendar" wx:for-index="idx">
+                <view class="ui-calendar__item ui-calendar__{{calendar.status}} ui-calendar__{{calendar.isSelect}} ui-calendar__{{calendar.between}} ui-calendar__{{calendar.rentStatus}}" data-date="{{calendar.date}}" data-dateInfo="{{index+','+idx}}" bindtap="tapDate">
+                    <block wx:if="{{calendar.price > 0}}">
+                        <view>{{calendar.currDate}}</view>
+                        <view class="ui-calendar__price">{{calendar.price}}</view>
+                    </block>
+                    <blcok wx:else>
+                        {{calendar.currDate}}
+                    </blcok>
+                </view>
+            </block>
+        </view>
+    </block>
+    <view>请选择日期</view>
+</block>
+
+
+

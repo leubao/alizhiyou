@@ -1,0 +1,8 @@
+<import src="/pages/common/templates.wxml"/>
+
+<scroll-view scroll-y="true" upper-threshold="0" bindscroll="bindScroll" style="background-color: #ffffff;" class="container">
+
+    <template is="calendarTeml" data="{{data: calendarLists, type: ''}}"/>
+
+</scroll-view>
+<button class="ui-button-fixBottom" bindtap="confirmDate">确定</button>

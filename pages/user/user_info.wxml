@@ -1,0 +1,36 @@
+<!--pages/user/user_info.wxml-->
+<import src="/pages/common/templates.wxml"/>
+<view class="container">
+  <view class="uinfo-header">
+      <image class="uinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+       <text class="uinfo-nickname">{{userInfo.nickName}}</text>
+       <text class="uinfo-slogen">绑定阿里智游会员，尊享会员特权</text>
+  </view>
+  <!--菜单-->
+  <view class="menu-list kind-list-item-bd kind-list-item-bd-show">
+    <navigator url="pages/{{page}}/{{page}}" class="navigator">
+      <view class="navigator-text">全部订单</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator url="pages/{{page}}/{{page}}" class="navigator">
+      <view class="navigator-text">门票订单</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator url="pages/{{page}}/{{page}}" class="navigator">
+      <view class="navigator-text">酒店订单</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    
+  </view>
+  <view class="menu-list menu-fg">
+    <navigator url="pages/{{page}}/{{page}}" class="navigator">
+      <view class="navigator-text">优惠劵</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+  </view>
+  <!--客服-->
+  <view bindtap="uinfoGuest">
+    <text class="uinfo-guest">联系客服</text>
+  </view>
+  <template is="footTeml"/>
+</view>

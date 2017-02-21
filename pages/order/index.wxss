@@ -1,0 +1,17 @@
+/* pages/order/index.wxss */
+.page__hd{
+    background-color: #FFF;
+    top: 0;
+    width: 100%;
+    padding: 30rpx;
+}
+.page__title{
+    font-size: 24pt;
+    color: #3399ff;
+    margin-left:20rpx;
+}
+.page__desc{
+    font-size: 10pt;
+    color: #ddd;
+    margin-left:20rpx;
+}

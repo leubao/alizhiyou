@@ -1,0 +1,96 @@
+@import '../../static/weui/weui.wxss';
+.weui-footer{font-size:12px;}
+/*calendar begin*/
+.ui-calendar{
+  font-size: 26rpx;
+  background-color: #fafafa;
+  /*text-align: center;
+  margin:0 40rpx;*/
+}
+
+.ui-calendar__title{
+  font-size: 36rpx;
+  color: #555555;
+  height: 95rpx;
+  line-height: 95rpx;
+  text-align: center;
+}
+.ui-calendar__header{
+  position: fixed; 
+  top: 0;
+  left:0;
+  z-index: 2;
+  background-color: #657180;
+  width:100%;
+  /*margin:0 40rpx;*/
+}
+.ui-weeks{
+  display: inline-block;
+  text-align: center;
+  width: 87rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  vertical-align: top;
+  margin:0rpx 10rpx;
+  color: #FFFFFF;
+}
+.ui-weeks view{
+  width: 87rpx;
+  height: 37.5rpx;
+  line-height: 37.5rpx;
+}
+.ui-calendar .ui-calendar__item{
+  display: inline-block;
+  text-align: center;
+  width: 87rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  vertical-align: top;
+  margin: 10rpx;
+}
+
+.ui-calendar__item view{
+  width: 87rpx;
+  height: 37.5rpx;
+  line-height: 37.5rpx;
+}
+.ui-calendar__before{
+  color: #e9e9e9;
+}
+
+.ui-calendar__rented{
+  background-color: #dddddd;
+  border-radius: 2px;
+}
+
+.ui-calendar__after, .ui-calendar__today{
+  color: #555555;
+}
+.ui-calendar__today{
+  border: 1px solid #3399ff;
+  border-radius: 2px;
+}
+
+.ui-calendar__price{
+  font-size: 20rpx;
+}
+
+.ui-calendar__today .ui-calendar__price,
+.ui-calendar__after .ui-calendar__price{
+  color: #999999;
+}
+
+.ui-calendar__selected,.ui-calendar__between {
+  background-color: #3399ff;
+  color: #ffffff !important;
+  border-radius: 2px;
+}
+.ui-calendar__selected .ui-calendar__price,
+.ui-calendar__between .ui-calendar__price
+{
+  color: #ffffff !important;
+}
+/*calendar end*/
+/*通用自定义*/
+.mt40{margin-top:40rpx;}
+.de-color{color:#3399ff;}

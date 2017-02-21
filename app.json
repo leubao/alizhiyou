@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goods/goods",
+    "pages/goods/lists",
+    "pages/goods/view",
+    "pages/goods/google",
+    "pages/order/index",
+    "pages/order/info",
+    "pages/order/cart",
+    "pages/order/create_info",
+    "pages/user/user_info",
+    "pages/calendar/calendar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "阿里智游",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "selectedColor":"#3399ff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "../static/img/home.png",
+      "selectedIconPath": "../static/img/select_home.png"
+    },
+    {
+      "pagePath": "pages/goods/lists",
+      "text": "发现",
+      "iconPath": "../static/img/found.png",
+      "selectedIconPath": "../static/img/select_found.png"
+    },
+    {
+      "pagePath": "pages/order/index",
+      "text": "订单",
+      "iconPath": "../static/img/order.png",
+      "selectedIconPath": "../static/img/select_order.png"
+    },
+    {
+      "pagePath": "pages/user/user_info",
+      "text": "我的",
+      "iconPath": "../static/img/user.png",
+      "selectedIconPath": "../static/img/select_user.png"
+    }]
+  },
+  "networkTimeout":{
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}

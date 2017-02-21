@@ -1,0 +1,7 @@
+@import '/app.wxss';
+/* pages/goods/lists.wxss */
+.weui-media-box__thumb{
+    width: 60rpx;
+    height: 60rpx;
+    text-align: center;
+}

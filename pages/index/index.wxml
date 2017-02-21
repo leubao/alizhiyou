@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<import src="/pages/common/templates.wxml" />
+<view class="container">
+  <!--INDEX HEADER-->
+  <view class="index_header">
+    <view class="index_logo">
+      <image class="t-logo" src="{{logoUrl}}" background-size="cover"></image>
+    </view>
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+                <label class="weui-search-bar__label" bindtap="googleList">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+      </view> 
+    </view>
+  </view>
+  <!--INDEX recommend-->
+  <view class="index_t">
+  <button bindtap="calendar">日历选择</button>
+  </view>
+  
+  <template is="footTeml"/>
+  <!--
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>-->
+</view>

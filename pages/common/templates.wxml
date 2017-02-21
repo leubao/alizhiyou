@@ -1,0 +1,12 @@
+<!--  加载遮罩 -->
+<template name="loadingTeml">
+    <include src="/pages/common/loadTeml.wxml"/>
+</template>
+<!--  日历 -->
+<template name="calendarTeml">
+    <include src="/pages/common/calendarTeml.wxml"/>
+</template>
+<!--页脚-->
+<template name="footTeml">
+    <include src="/pages/common/footTeml.wxml"/>
+</template>

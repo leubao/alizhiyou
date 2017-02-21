@@ -1,0 +1,9 @@
+<template name="footTeml">
+	<view class="weui-footer weui-footer_fixed-bottom">
+	  <view class="weui-footer__links">
+	    <navigator url="" class="weui-footer__link">阿里智游</navigator>
+	    <navigator url="" class="weui-footer__link">Alizhiyou.com</navigator>
+	  </view>
+	  <view class="weui-footer__text">Copyright © 2013-2017 leubao.com</view>
+	</view>
+</template>
